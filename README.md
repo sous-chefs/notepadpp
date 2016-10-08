@@ -1,5 +1,5 @@
 [![Cookbook Version](http://img.shields.io/cookbook/v/notepadpp.svg)](https://supermarket.chef.io/cookbooks/notepadpp)
-
+[![Build status](https://ci.appveyor.com/api/projects/status/193b2595cyufx8ym/branch/master?svg=true)](https://ci.appveyor.com/project/ChefWindowsCookbooks65871/notepadpp/branch/master)
 
 # Notepad++ Cookbook
 
