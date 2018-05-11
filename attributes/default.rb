@@ -18,8 +18,14 @@
 # limitations under the License.
 #
 
-default['notepadpp']['base_url']    = 'https://notepad-plus-plus.org/repository/7.x/'
-default['notepadpp']['version']     = '7.0'
-default['notepadpp']['setup_exe']   = 'npp.7.Installer.exe'
-default['notepadpp']['checksum']    = '0155c4ab117d63ba5142fc1090debc07dc7953264f7202ef8d25014e2cf8668d'
-default['notepadpp']['install_dir'] = (ENV['ProgramFiles(x86)'] || 'C:\Program Files (x86)') + '\Notepad++'
+default['notepadpp']['install_dir'] = ENV['ProgramFiles'] + '\Notepad++'
+
+if node['kernel']['machine'] == 'x86_64'
+  default['notepadpp']['url'] = 'https://notepad-plus-plus.org/repository/7.x/7.5.6/npp.7.5.6.Installer.x64.exe'
+  default['notepadpp']['checksum'] = 'adc915baa76e80c26d04f0ce1df6b592da809b3e14815f5a53369a7f3a993a83'
+  default['notepadpp']['package_name'] = 'Notepad++ (64-bit x64)'
+else
+  default['notepadpp']['url'] = 'https://notepad-plus-plus.org/repository/7.x/7.5.6/npp.7.5.6.Installer.exe'
+  default['notepadpp']['checksum'] = '9ce95883c5821c3fa7b9319f4952d67ae077cdd79d5327dd7bed63542703cb82'
+  default['notepadpp']['package_name'] = 'Notepad++ (32-bit x86)'
+end
