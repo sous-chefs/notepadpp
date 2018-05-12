@@ -2,7 +2,7 @@ describe 'notepadpp::default' do
   describe '32-bit Windows' do
     let(:chef_run) do
       ChefSpec::ServerRunner.new do |node|
-        node.override['kernel']['machine'] = 'i386'
+        node.automatic['kernel']['machine'] = 'i386'
       end.converge(described_recipe)
     end
     it 'downloads the Notepad++ package' do
@@ -17,7 +17,7 @@ describe 'notepadpp::default' do
   describe '64-bit Windows' do
     let(:chef_run) do
       ChefSpec::ServerRunner.new do |node|
-        node.override['kernel']['machine'] = 'x86_64'
+        node.automatic['kernel']['machine'] = 'x86_64'
       end.converge(described_recipe)
     end
     it 'downloads the Notepad++ package' do
