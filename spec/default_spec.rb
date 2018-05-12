@@ -5,7 +5,7 @@ describe 'notepadpp::default' do
         node.override['kernel']['machine'] = 'i386'
       end.converge(described_recipe)
     end
-    it 'downloads the Notepadd++ package' do
+    it 'downloads the Notepad++ package' do
       expect(chef_run).to install_windows_package('Notepad++ (32-bit x86)')
         .with(
           source: 'https://notepad-plus-plus.org/repository/7.x/7.5.6/npp.7.5.6.Installer.exe',
@@ -20,7 +20,7 @@ describe 'notepadpp::default' do
         node.override['kernel']['machine'] = 'x86_64'
       end.converge(described_recipe)
     end
-    it 'downloads the Notepadd++ package' do
+    it 'downloads the Notepad++ package' do
       expect(chef_run).to install_windows_package('Notepad++ (64-bit x64)')
         .with(
           source: 'https://notepad-plus-plus.org/repository/7.x/7.5.6/npp.7.5.6.Installer.x64.exe',
