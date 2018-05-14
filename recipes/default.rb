@@ -18,13 +18,7 @@
 # limitations under the License.
 #
 
-url = ::File.join(
-  node['notepadpp']['base_url'],
-  node['notepadpp']['version'],
-  node['notepadpp']['setup_exe']
-)
-
-windows_package 'Notepad++' do
-  source url
+windows_package node['notepadpp']['package_name'] do
+  source node['notepadpp']['url']
   checksum node['notepadpp']['checksum']
 end

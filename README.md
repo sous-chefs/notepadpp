@@ -3,7 +3,7 @@
 
 # Notepad++ Cookbook
 
-Installs [Notepad++](https://notepad-plus-plus.org) 
+Installs [Notepad++](https://notepad-plus-plus.org)
 
 ## Supported Platforms
 - Windows 7
@@ -18,7 +18,7 @@ Installs [Notepad++](https://notepad-plus-plus.org)
 # Attributes
 
 ## Optional
-* `node['notepadpp']['version']` - Version of Notepad++ to install, defaults to 7.0.
+* None
 
 # Usage
 
