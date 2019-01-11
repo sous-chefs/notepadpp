@@ -18,6 +18,8 @@
 # limitations under the License.
 #
 
+return unless platform?('windows')
+
 default['notepadpp']['install_dir'] = ENV['ProgramFiles'] + '\Notepad++'
 
 if node['kernel']['machine'] == 'x86_64'
