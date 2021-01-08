@@ -2,6 +2,15 @@
 
 This file is used to list changes made in each version of notepadpp.
 
+## Unreleased
+
+- resolved cookstyle error: attributes/default.rb:3:1 refactor: `Chef/Style/CommentFormat`
+- resolved cookstyle error: attributes/default.rb:6:1 refactor: `Chef/Style/CommentFormat`
+- resolved cookstyle error: metadata.rb:6:1 refactor: `Chef/Modernize/RespondToInMetadata`
+- resolved cookstyle error: metadata.rb:9:1 refactor: `Chef/RedundantCode/LongDescriptionMetadata`
+- resolved cookstyle error: recipes/default.rb:3:1 refactor: `Chef/Style/CommentFormat`
+- resolved cookstyle error: recipes/default.rb:6:1 refactor: `Chef/Style/CommentFormat`
+
 ## 2.0.0
 
 * Support Chef 13, drop support for Chef 12.
