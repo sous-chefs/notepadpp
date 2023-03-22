@@ -9,6 +9,7 @@ This file is used to list changes made in each version of notepadpp.
 - Remove rakefile
 - Remove .rspec
 - Remove .appveyor.yml
+- fix Rpsec tests
 
 ## 2.0.4 - *2023-02-14*
 
