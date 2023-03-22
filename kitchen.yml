@@ -15,3 +15,6 @@ suites:
     run_list:
       - recipe[notepadpp]
       - recipe[minitest-handler]
+
+verifier:
+  name: inspec
