@@ -6,6 +6,9 @@ This file is used to list changes made in each version of notepadpp.
 
 - Standardise files with files in sous-chefs/repo-management
 - Add integration tests
+- Remove rakefile
+- Remove .rspec
+- Remove .appveyor.yml
 
 ## 2.0.4 - *2023-02-14*
 
