@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe 'notepadpp::default' do
   describe '32-bit Windows' do
     let(:chef_run) do
