@@ -2,6 +2,8 @@
 
 This file is used to list changes made in each version of notepadpp.
 
+## Unreleased
+
 ## 3.0.0 - *2024-05-06*
 
 - Standardise files with files in sous-chefs/repo-management
