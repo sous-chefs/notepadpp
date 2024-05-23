@@ -2,6 +2,8 @@
 
 This file is used to list changes made in each version of notepadpp.
 
+## Unreleased
+
 ## 3.0.1 - *2024-05-23*
 
 ## 3.0.0 - *2024-05-06*
