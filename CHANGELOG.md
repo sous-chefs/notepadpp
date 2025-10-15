@@ -2,6 +2,13 @@
 
 This file is used to list changes made in each version of notepadpp.
 
+## [3.0.3](https://github.com/sous-chefs/notepadpp/compare/3.0.2...v3.0.3) (2025-10-15)
+
+
+### Bug Fixes
+
+* **ci:** Update workflows to use release pipeline ([#25](https://github.com/sous-chefs/notepadpp/issues/25)) ([ffa6b5c](https://github.com/sous-chefs/notepadpp/commit/ffa6b5cce36f6ebe844a73d0ce0ecbe6780a598c))
+
 ## 3.0.0 - *2024-05-06*
 
 * Standardise files with files in sous-chefs/repo-management
