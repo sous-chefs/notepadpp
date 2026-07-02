@@ -10,6 +10,7 @@ jobs:
   lint-unit:
     uses: sous-chefs/.github/.github/workflows/lint-unit.yml@9.0.0
     with:
+      gems: rake
       platform: windows-latest
     permissions:
       actions: write
