@@ -6,7 +6,8 @@ transport:
   name: exec
 
 provisioner:
-  chef_omnibus_install: false
+  product_name: cinc
+  install_strategy: skip
 
 verifier:
   name: dummy
