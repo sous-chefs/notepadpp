@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'notepadpp::default' do
   describe '32-bit Windows' do
     let(:chef_run) do
-      ChefSpec::ServerRunner.new do |node|
+      ChefSpec::SoloRunner.new do |node|
         node.automatic['kernel']['machine'] = 'i386'
       end.converge(described_recipe)
     end
@@ -18,7 +18,7 @@ describe 'notepadpp::default' do
 
   describe '64-bit Windows' do
     let(:chef_run) do
-      ChefSpec::ServerRunner.new do |node|
+      ChefSpec::SoloRunner.new do |node|
         node.automatic['kernel']['machine'] = 'x86_64'
       end.converge(described_recipe)
     end
