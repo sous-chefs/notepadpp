@@ -5,6 +5,9 @@ driver:
 transport:
   name: exec
 
+provisioner:
+  chef_omnibus_install: false
+
 verifier:
   name: dummy
 
