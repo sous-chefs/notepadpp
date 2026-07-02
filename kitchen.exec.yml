@@ -5,6 +5,9 @@ driver:
 transport:
   name: exec
 
+verifier:
+  name: dummy
+
 platforms:
   - name: windows-latest
   - name: macos-latest
