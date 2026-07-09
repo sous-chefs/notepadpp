@@ -3,7 +3,8 @@ driver:
   name: vagrant
 
 provisioner:
-  name: chef_zero
+  name: policyfile_zero
+  policyfile: Policyfile.rb
 
 platforms:
   - name: windows-2019
@@ -15,6 +16,8 @@ suites:
     run_list:
       - recipe[notepadpp]
       - recipe[minitest-handler]
+    provisioner:
+      named_run_list: default
 
 verifier:
-  name: inspec
+  name: dummy

@@ -5,6 +5,13 @@ driver:
 transport:
   name: exec
 
+provisioner:
+  product_name: cinc
+  install_strategy: skip
+
+verifier:
+  name: dummy
+
 platforms:
   - name: windows-latest
   - name: macos-latest
