@@ -1,23 +1,26 @@
 ---
 driver:
   name: vagrant
-
+transport:
+  name: winrm
+  elevated: true
 provisioner:
-  name: policyfile_zero
-  policyfile: Policyfile.rb
-
+  name: chef_infra
+  policyfile_path: Policyfile.rb
+  chef_license: accept-no-persist
+  deprecations_as_errors: true
+verifier:
+  name: inspec
 platforms:
   - name: windows-2019
     driver_config:
       box: tas50/windows_2019
-
 suites:
   - name: default
-    run_list:
-      - recipe[notepadpp]
-      - recipe[minitest-handler]
     provisioner:
       named_run_list: default
-
-verifier:
-  name: dummy
+      multiple_converge: 2
+      enforce_idempotency: true
+  - name: remove
+    provisioner:
+      named_run_list: remove

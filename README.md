@@ -1,27 +1,19 @@
-# Notepad++ Cookbook
+# Notepad++ cookbook
 
-Installs [Notepad++](https://notepad-plus-plus.org)
+Installs and removes Notepad++ on Windows through the `notepadpp_install` custom resource.
 
-## Supported Platforms
+Requires Chef 16 or newer. The default editor version is 8.9.9.1; x86, x64 and ARM64 installers are available.
 
-- Windows 7
-- Windows 8
-- Windows 8.1
-- Windows 10
-- Windows Server 2008
-- Windows Server 2008 R2
-- Windows Server 2012
-- Windows Server 2012 R2
+```ruby
+notepadpp_install 'editor'
+```
 
-## default
+See [resource properties and actions](documentation/notepadpp_install.md), the [version 4 migration guide](migration.md), and [platform and maintainer guidance](AGENTS.md).
 
-Add `notepadpp::default` to your runlist.
+## Maintainers
 
-## Contributing
+This cookbook is maintained by the [Sous Chefs](https://sous-chefs.org/).
 
-1. Fork the repository on Github
-2. Create a named feature branch (i.e. add-something-awesome)
-3. Write your change
-4. Write tests for your change (if applicable)
-5. Run the build and ensure it passes. `bundle install && bundle exec rake && kitchen verify`
-6. Submit a Pull Request
+## Licence
+
+Apache-2.0. Notepad++ is distributed separately under its own licence.
