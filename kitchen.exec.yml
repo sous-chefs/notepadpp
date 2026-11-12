@@ -1,17 +1,10 @@
 ---
 driver:
   name: exec
-
 transport:
   name: exec
-
 provisioner:
-  product_name: cinc
   install_strategy: skip
-
-verifier:
-  name: dummy
-
+  chef_client_path: <%= File.expand_path('../../bin/chef-client.bat', RbConfig::CONFIG['bindir']) %>
 platforms:
   - name: windows-latest
-  - name: macos-latest

@@ -1,0 +1,8 @@
+---
+name: notepadpp-default
+title: Notepad++ installation
+maintainer: Sous Chefs
+copyright: Sous Chefs
+license: Apache-2.0
+summary: Verify the installed editor
+version: 1.0.0
